@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — Trend Vault</title>
+    <meta name="description" content="What the Trend Vault browser extension and Pinterest app read, where it goes, and what is never collected." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">Trend Vault</a>
+      <nav>
+        <a href="/">Reviews</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Privacy policy</h1>
+      <p class="muted">Last updated: 10 October 2026</p>
+
+      <p class="lede">
+        This policy covers the Trend Vault browser extension and the Trend Vault
+        Pinterest app. It describes exactly what is read, where it goes, and what is
+        never collected.
+      </p>
+
+      <section>
+        <h2>In one paragraph</h2>
+        <p>
+          The extension reads the product page you are viewing so it can write
+          marketing copy about that product. Nothing leaves your computer until you
+          press a button. There is no Trend Vault server, no analytics, no tracking
+          and no advertising. The only third party involved is the AI provider
+          <em>you</em> choose and configure with <em>your own</em> key.
+        </p>
+      </section>
+
+      <section>
+        <h2>What is read</h2>
+        <table>
+          <tr>
+            <th>What</th>
+            <th>When</th>
+          </tr>
+          <tr>
+            <td>
+              The Amazon product page you are viewing: product title, brand, category
+              and feature bullets, plus the page URL.
+            </td>
+            <td>
+              Automatically on Amazon product pages, so the panel is ready when you
+              open it. This is local only and happens on no other site.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Your own Pinterest data, if you connect a Pinterest app: your pins and
+              their destination links, and metrics for your own account —
+              impressions, saves and outbound clicks. Read-only.
+            </td>
+            <td>
+              Only after you connect, and only when you open the data view. The
+              extension cannot read anyone else's Pinterest data, and cannot post,
+              edit or delete anything.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Where it goes</h2>
+        <p>
+          <strong>Nowhere, until you press a button.</strong> The product brief is held
+          in memory and in per-tab session storage. When you press Generate, that brief
+          is sent to the AI provider you configured, as part of the prompt. Which
+          provider that is, is your choice:
+        </p>
+        <table>
+          <tr><th>Provider</th><th>What it receives</th></tr>
+          <tr><td>Google Gemini</td><td>The product brief and prompt</td></tr>
+          <tr><td>OpenAI</td><td>The product brief and prompt</td></tr>
+          <tr><td>OpenRouter</td><td>The product brief and prompt</td></tr>
+          <tr><td>Groq</td><td>The product brief and prompt</td></tr>
+          <tr><td>A custom endpoint you specify</td><td>The product brief and prompt</td></tr>
+          <tr><td>A model on your own machine (Ollama, LM Studio)</td><td>Nothing leaves your computer</td></tr>
+        </table>
+        <p>
+          Your Pinterest data is never sent to an AI provider. It is read to rank your
+          own products and is displayed to you.
+        </p>
+      </section>
+
+      <section>
+        <h2>What is stored, and where</h2>
+        <p>
+          Everything is stored in your own browser profile, using the browser's
+          extension storage. Nothing is synchronised to other devices, and there is no
+          Trend Vault account.
+        </p>
+        <table>
+          <tr><th>Stored</th><th>Why</th></tr>
+          <tr><td>Your AI provider API key</td><td>To call the provider you chose. Stored locally, never synced.</td></tr>
+          <tr><td>Your settings and preferences</td><td>Language, tone, audience, keywords, disclosure wording, affiliate tag.</td></tr>
+          <tr><td>Generated copy, up to 40 entries</td><td>So reopening a product does not spend your API quota again. Oldest entries are removed first.</td></tr>
+          <tr><td>Products you have generated copy for, up to 500</td><td>So their performance can be shown per product. Removed oldest-first when the limit is reached.</td></tr>
+          <tr><td>Product information for open tabs</td><td>Held in session storage only, which the browser clears when the session ends.</td></tr>
+          <tr><td>Pinterest app credentials and access tokens, if you connect</td><td>To call the Pinterest API on your behalf. Read-only scopes. Removed completely when you disconnect.</td></tr>
+        </table>
+        <p>
+          You can clear the generated-copy cache at any time from the extension's
+          settings, and disconnect Pinterest from the same page. Removing the extension
+          removes all of it.
+        </p>
+      </section>
+
+      <section>
+        <h2>What is never collected</h2>
+        <ul class="points">
+          <li>No browsing history, and no pages other than the Amazon product page you are viewing.</li>
+          <li>No analytics, telemetry, crash reporting or usage statistics.</li>
+          <li>No advertising identifiers, and no data sold or shared with anyone.</li>
+          <li>No passwords. The extension never asks for your Amazon or Pinterest password, and the Pinterest connection uses Pinterest's own authorisation screen, which the extension cannot read.</li>
+          <li>No data used for creditworthiness or lending purposes.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Permissions, and why each is needed</h2>
+        <table>
+          <tr><th>Permission</th><th>Reason</th></tr>
+          <tr><td>Amazon storefronts</td><td>Read the product page to build the prompt.</td></tr>
+          <tr><td>Your chosen AI provider</td><td>Send the prompt and receive the generated copy.</td></tr>
+          <tr><td>Storage</td><td>Keep your settings, key and cached copy locally.</td></tr>
+          <tr><td>Side panel</td><td>The extension's interface is a side panel, so the product page stays visible.</td></tr>
+          <tr><td>Pinterest API</td><td>Read your own trends and pin metrics, only if you connect.</td></tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          The extension is a marketing tool for adults running an affiliate business. It
+          is not directed at children and does not knowingly handle their data.
+        </p>
+      </section>
+
+      <section>
+        <h2>Affiliate disclosure</h2>
+        <p>
+          Trend Vault participates in the Amazon Associates programme and earns a
+          commission from qualifying purchases made through links on this site and in
+          content created with the extension. As an Amazon Associate we earn from
+          qualifying purchases. This costs you nothing and does not affect what is
+          recommended.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes, and contacting us</h2>
+        <p>
+          If this policy changes, the date at the top changes with it, and material
+          changes will be noted in the extension's release notes.
+        </p>
+        <p>
+          Questions, or a request to see or delete anything held about you — though
+          everything is on your own machine, so removing the extension removes it:
+          <a href="mailto:najaf.eldar@gmail.com">najaf.eldar@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="disclosure">
+        <p class="small">
+          Trend Vault is not affiliated with, endorsed by, or sponsored by Amazon,
+          Pinterest, Google, OpenAI, OpenRouter or Groq. All names are used
+          descriptively to indicate compatibility.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year">2026</span> Trend Vault. <a href="/">Reviews</a></p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
